@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CC 104 Project Guidelines</title>
+
+<style>
+    
+    @page { size: A4; margin: 18mm; }
+    * { box-sizing: border-box; }
+    body {
+       
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222;
+        line-height: 1.55;
+        margin: 0;
+        background: #f4f6f817;
+    }
+    .container {
+        background-image: url('mc.jpg');
+        max-width: 1050px;
+        margin: 0 auto;
+        background: #ffffff14;
+        padding: 48px 58px;
+    }
+    .cover {
+        
+        text-align: center;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 3px solid #1f4e79;
+        margin-bottom: 35px;
+    }
+    .cover h1 {
+        color: #1f4e79;
+        font-size: 40px;
+        margin: 12px 0 5px;
+    }
+    .cover h2 {
+        font-size: 23px;
+        margin: 5px 0;
+    }
+    .cover h3 {
+        color: #555;
+        font-size: 18px;
+        margin: 8px 0 30px;
+    }
+    .cover .subtitle {
+        font-size: 17px;
+        font-weight: bold;
+        color: #333;
+    }
+    .institution {
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: .4px;
+    }
+    h1.section {
+        background: #1f4e79;
+        color: white;
+        padding: 11px 15px;
+        font-size: 20px;
+        margin-top: 36px;
+        border-radius: 4px;
+    }
+    h2 {
+        color: #1f4e79;
+        font-size: 18px;
+        border-bottom: 1px solid #d9e2f3;
+        padding-bottom: 5px;
+        margin-top: 25px;
+    }
+    h3 {
+        color: #333;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    p { margin: 8px 0 12px; }
+    ul, ol { margin-top: 6px; }
+    li { margin: 4px 0; }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 14px 0 20px;
+        font-size: 14px;
+    }
+    th {
+        background: #076a00;
+        color: white;
+        text-align: left;
+        padding: 9px;
+        border: 1px solid #c8d1dc;
+    }
+    td {
+        padding: 8px 9px;
+        border: 1px solid #c8d1dc;
+        vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #f7f9fb; }
+    .callout {
+        border-left: 5px solid #1f4e79;
+        background: #eef4f9;
+        padding: 13px 16px;
+        margin: 16px 0;
+    }
+    .fee {
+        background: #fff4df;
+        border: 1px solid #e2b65d;
+        padding: 14px 17px;
+        margin: 15px 0;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    .checklist td:first-child { width: 65%; }
+    .checkbox {
+        width: 55px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .workflow {
+        background: #f7f9fb;
+        border: 1px solid #d6dee8;
+        padding: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .page-break { page-break-before: always; }
+    .footer {
+        margin-top: 45px;
+        padding-top: 15px;
+        border-top: 1px solid #ccc;
+        text-align: center;
+        font-size: 12px;
+        color: #666;
+    }
+    
+    @media print {
+        body { background: rgb(3, 141, 72); }
+        .container { max-width: none; padding: 0; }
+        .cover { min-height: 90vh; }
+        h1.section { break-after: avoid; }
+        table, .callout, .fee { break-inside: avoid; }
+    }
+img{
+  margin: auto;
+}
+</style>
+</style>
+</head>
+<body>
+<div class="container">
+
+<section class="cover">
+    <div>
+    <img src="mc.jpg"  width="100" height="100">
+    <img src="ccs.jpg"  width="100" height="100">
+    </div>
+    <div class="institution">MABINI COLLEGES, INC.</div>
+    <div>Daet, Camarines Norte</div>
+    <div>COLLEGE OF COMPUTER STUDIES</div>
+    <h1>CC 104 – DATA STRUCTURES AND ALGORITHMS IN JAVA</h1>
+    <h2>PROJECT GUIDELINES</h2>
+    <h3>2nd Year Bachelor of Science in Computer Science</h3>
+    <div class="subtitle">Proposal Defense • System Development • Final Defense</div>
+</section>
+
+<h1 class="section">I. Project Overview</h1>
+<p>The Major Project in <strong>CC 104 – Data Structures and Algorithms in JAVA</strong> is a group-based culminating project designed to allow students to apply the concepts, principles, algorithms, data structures, and programming techniques discussed throughout the course.</p>
+<p>The project requires students to identify a <strong>real-world computing problem</strong>, propose an appropriate computing solution, and develop a functional Java-based application that demonstrates the appropriate use of:</p>
+<ul>
+<li>Abstract Data Types (ADTs)</li>
+<li>Data Structures</li>
+<li>Algorithms</li>
+<li>Searching and sorting techniques</li>
+<li>Algorithm analysis</li>
+<li>Iterative and/or recursive approaches</li>
+<li>Abstraction</li>
+<li>Encapsulation</li>
+<li>Information hiding</li>
+<li>Program testing and debugging</li>
+<li>Appropriate programming and implementation strategies</li>
+</ul>
+<div class="callout">The syllabus identifies the Major Project as an <strong>ADT-Based Problem-Solving System</strong> and requires students to develop and defend a functional application applying ADTs, data structures, algorithms, testing, debugging, and comparative evaluation.</div>
+
+<h1 class="section">II. General Project Objectives</h1>
+<ol>
+<li>Identify and clearly define a real-world computing problem.</li>
+<li>Analyze the requirements of the identified problem.</li>
+<li>Select appropriate abstract data types and data structures.</li>
+<li>Design appropriate algorithms for the proposed solution.</li>
+<li>Implement the proposed solution using Java.</li>
+<li>Apply appropriate searching, sorting, tree, graph, list, stack, queue, set, map, or hashing concepts when applicable.</li>
+<li>Apply abstraction, encapsulation, and information hiding.</li>
+<li>Test and debug the developed application systematically.</li>
+<li>Analyze the efficiency and suitability of the selected algorithms and data structures.</li>
+<li>Explain and defend programming and design decisions.</li>
+<li>Work effectively as a member of a development team.</li>
+<li>Prepare technical documentation and communicate the completed project professionally.</li>
+</ol>
+
+<h1 class="section">III. Project Grouping</h1>
+<h2>A. Group Composition</h2>
+<ul>
+<li>The project shall be completed by a group of students.</li>
+<li>The instructor shall determine or approve the final group composition.</li>
+<li>Each member must have a clearly defined responsibility.</li>
+<li>All members are expected to contribute to analysis, design, implementation, testing, documentation, and presentation.</li>
+</ul>
+<h2>B. Individual Accountability</h2>
+<p>Although the project is completed as a group, <strong>individual performance will be evaluated</strong>. During the defense, any member may be asked questions regarding problem analysis, system design, data structures, algorithms, Java implementation, testing, debugging, complexity, design decisions, and individual contribution.</p>
+
+<h1 class="section">IV. Project Selection Guidelines</h1>
+<h2>A. Choosing the Project</h2>
+<p>The proposed project must address a <strong>specific and realistic computing problem</strong>. Suggested areas include:</p>
+<ul>
+<li>School or campus services</li>
+<li>Library management</li>
+<li>Inventory management</li>
+<li>Student services</li>
+<li>Appointment or scheduling systems</li>
+<li>Transportation or routing</li>
+<li>Small-business operations</li>
+<li>Community services</li>
+<li>Record management</li>
+<li>File or document organization</li>
+<li>Task or resource management</li>
+<li>Searching and information retrieval</li>
+<li>Ranking or prioritization systems</li>
+<li>Other computing problems approved by the instructor</li>
+</ul>
+<div class="callout"><strong>Important:</strong> The project should not simply be a generic CRUD application. The proposed system must demonstrate meaningful use of <strong>data structures and algorithms</strong>.</div>
+
+<h2>B. Required DSA Component</h2>
+<table>
+<tr><th>Data Structure / Concept</th><th>Possible Application</th></tr>
+<tr><td>Array / ArrayList</td><td>Records, collections, sequential data</td></tr>
+<tr><td>Linked List</td><td>Dynamic records or sequential management</td></tr>
+<tr><td>Stack</td><td>Undo operations, history, expression processing</td></tr>
+<tr><td>Queue</td><td>Service queues, scheduling, waiting lists</td></tr>
+<tr><td>Tree</td><td>Hierarchical information, searching</td></tr>
+<tr><td>Binary Search Tree</td><td>Organized searchable records</td></tr>
+<tr><td>Heap / Priority Queue</td><td>Priority-based processing</td></tr>
+<tr><td>Graph</td><td>Routes, networks, relationships</td></tr>
+<tr><td>Set</td><td>Unique records or membership checking</td></tr>
+<tr><td>Map / Hashing</td><td>Fast key-based searching</td></tr>
+<tr><td>Searching Algorithms</td><td>Record or information retrieval</td></tr>
+<tr><td>Sorting Algorithms</td><td>Ranking, ordering, reports</td></tr>
+<tr><td>Recursion</td><td>Tree traversal or recursive processing</td></tr>
+</table>
+<p>Students are <strong>not required to use every data structure</strong>. They must select structures appropriate to the problem and justify their choices.</p>
+
+<h1 class="section">V. Project Requirements</h1>
+<ul>
+<li><strong>Problem-Based:</strong> The project must begin with a clearly identified real-world problem.</li>
+<li><strong>Functional:</strong> The system must have working features and demonstrate actual processing of data.</li>
+<li><strong>Algorithm-Based:</strong> The system must use appropriate algorithms rather than relying entirely on built-in operations.</li>
+<li><strong>Data-Structure-Based:</strong> The project must demonstrate meaningful implementation or application of appropriate data structures.</li>
+<li><strong>Java-Based:</strong> The primary implementation language shall be Java.</li>
+<li><strong>Testable:</strong> The system must be tested using appropriate test cases.</li>
+<li><strong>Defensible:</strong> Students must be able to explain and justify their technical decisions.</li>
+<li><strong>Documented:</strong> The project must have complete technical and project documentation.</li>
+</ul>
+
+<h1 class="section">PART I – PROPOSAL DEVELOPMENT AND PROPOSAL DEFENSE</h1>
+
+<h1 class="section">VI. Purpose of the Proposal</h1>
+<p>The Proposal Defense determines whether the proposed project:</p>
+<ul>
+<li>Addresses a legitimate computing problem;</li>
+<li>Has clearly defined objectives;</li>
+<li>Is feasible within the course timeframe;</li>
+<li>Uses appropriate data structures and algorithms;</li>
+<li>Can be implemented using Java;</li>
+<li>Has sufficient technical depth for a Data Structures and Algorithms course; and</li>
+<li>Can be completed by the proposed group.</li>
+</ul>
+
+<h1 class="section">VII. Proposal Document Format</h1>
+<h2>Preliminary Pages</h2>
+<ol>
+<li>Cover Page</li>
+<li>Project Title</li>
+<li>Names of Group Members</li>
+<li>Program and Year Level</li>
+<li>Course and Section</li>
+<li>Instructor</li>
+<li>Date of Submission</li>
+</ol>
+
+<h2>Chapter 1 – Introduction</h2>
+<ul>
+<li><strong>1.1 Background of the Project</strong> – Explain the situation or context surrounding the problem.</li>
+<li><strong>1.2 Problem Statement</strong> – Clearly describe what is happening, who experiences the problem, why it matters, and current limitations.</li>
+<li><strong>1.3 Proposed Solution</strong> – Provide an overview of the proposed computing solution.</li>
+<li><strong>1.4 Project Objectives</strong> – State the general and specific objectives.</li>
+<li><strong>1.5 Scope and Limitations</strong> – Identify features, users, processes, data, and excluded features.</li>
+<li><strong>1.6 Significance of the Project</strong> – Identify intended beneficiaries and expected benefits.</li>
+</ul>
+
+<h2>Chapter 2 – Project and Technical Review</h2>
+<ul>
+<li><strong>2.1 Existing System or Current Process</strong></li>
+<li><strong>2.2 Related Systems / Existing Solutions</strong></li>
+<li><strong>2.3 Related Technologies</strong></li>
+<li><strong>2.4 Data Structures and Algorithms</strong> – Identify and justify proposed ADTs, data structures, algorithms, searching, sorting, and other DSA concepts.</li>
+</ul>
+
+<h2>Chapter 3 – Proposed System Design</h2>
+<ul>
+<li><strong>3.1 System Overview</strong></li>
+<li><strong>3.2 System Architecture</strong></li>
+<li><strong>3.3 System Flowchart</strong></li>
+<li><strong>3.4 Data Flow / Process Design</strong></li>
+<li><strong>3.5 Data Structure Design</strong></li>
+<li><strong>3.6 Algorithm Design</strong></li>
+<li><strong>3.7 Complexity Analysis</strong></li>
+</ul>
+
+<table>
+<tr><th>Requirement</th><th>Proposed Data Structure</th><th>Reason</th></tr>
+<tr><td>Student records</td><td>ArrayList</td><td>Dynamic collection</td></tr>
+<tr><td>Waiting customers</td><td>Queue</td><td>First-in, first-out processing</td></tr>
+<tr><td>Searchable records</td><td>BST</td><td>Organized searching</td></tr>
+<tr><td>Priority requests</td><td>Priority Queue</td><td>Priority-based processing</td></tr>
+</table>
+
+<h2>Chapter 4 – Project Development Plan</h2>
+<ul>
+<li><strong>4.1 Development Approach</strong></li>
+<li><strong>4.2 Required Resources</strong> – Hardware, software, JDK, IDE, libraries/tools, and other resources.</li>
+<li><strong>4.3 Project Schedule</strong> – Planning, analysis, design, coding, testing, debugging, documentation, and defense preparation.</li>
+<li><strong>4.4 Team Responsibilities</strong></li>
+</ul>
+<table>
+<tr><th>Member</th><th>Assigned Responsibility</th></tr>
+<tr><td>Member 1</td><td>Project coordination / analysis</td></tr>
+<tr><td>Member 2</td><td>Data structures / algorithms</td></tr>
+<tr><td>Member 3</td><td>Java implementation</td></tr>
+<tr><td>Member 4</td><td>Testing / debugging</td></tr>
+<tr><td>Member 5</td><td>Documentation / presentation</td></tr>
+</table>
+
+<h1 class="section">VIII. Proposal Defense Presentation</h1>
+<p><strong>Suggested Presentation Time:</strong> 5–10 minutes,<br>
+<strong>Question and Answer:</strong> 5 minutes</p>
+<h2>Required Presentation Content</h2>
+<ol>
+<li>Project Title</li>
+<li>Background</li>
+<li>Problem Statement</li>
+<li>Proposed Solution</li>
+<li>Objectives</li>
+<li>Target Users / Beneficiaries</li>
+<li>Scope and Limitations</li>
+<li>Proposed Features</li>
+<li>Proposed Data Structures</li>
+<li>Proposed Algorithms</li>
+<li>System Architecture / Flow</li>
+<li>Complexity Considerations</li>
+<li>Development Plan</li>
+<li>Team Responsibilities</li>
+<li>Expected Output</li>
+</ol>
+
+<h1 class="section">IX. Proposal Defense Panel Evaluation</h1>
+<table>
+<tr><th>Criteria</th><th>Weight</th></tr>
+<tr><td>Problem Relevance and Clarity</td><td>15%</td></tr>
+<tr><td>Objectives and Scope</td><td>10%</td></tr>
+<tr><td>Proposed Solution</td><td>15%</td></tr>
+<tr><td>Application of ADTs/Data Structures</td><td>20%</td></tr>
+<tr><td>Algorithm Selection and Justification</td><td>15%</td></tr>
+<tr><td>Technical Feasibility</td><td>10%</td></tr>
+<tr><td>Project Development Plan</td><td>5%</td></tr>
+<tr><td>Presentation and Communication</td><td>5%</td></tr>
+<tr><td>Response to Panel Questions</td><td>5%</td></tr>
+<tr><th>Total</th><th>100%</th></tr>
+</table>
+
+<h1 class="section">X. Proposal Defense Decision</h1>
+<ul>
+<li><strong>APPROVED</strong> – The group may proceed to system development.</li>
+<li><strong>APPROVED WITH REVISIONS</strong> – The group may proceed after completing required revisions.</li>
+<li><strong>REVISE AND RESUBMIT</strong> – Substantial revision is required before development.</li>
+<li><strong>NOT APPROVED</strong> – The project must be replaced or substantially redesigned.</li>
+</ul>
+<div class="callout"><strong>Note:</strong> Approval of the proposal does not guarantee approval of the final project.</div>
+
+<h1 class="section">XI. Proposal Defense Panel Fee</h1>
+<div class="fee">PROPOSAL DEFENSE PANEL FEE: ₱1,000 PER GROUP</div>
+<p>The fee is intended to cover the approved panel-related expenses associated with the defense. Collection and payment procedures shall follow the policies and instructions of the College/Institution.</p>
+
+<h1 class="section">PART II – FINAL PROJECT DEVELOPMENT AND FINAL DEFENSE</h1>
+
+<h1 class="section">XII. Purpose of the Final Project</h1>
+<p>The Final Project requires learners to transform the approved proposal into a <strong>functional Java-based computing solution</strong>.</p>
+<p>The completed system should demonstrate the learners ability to:</p>
+<ul>
+<li>Design appropriate data structures;</li>
+<li>Implement algorithms;</li>
+<li>Develop a functional Java application;</li>
+<li>Test and debug the application;</li>
+<li>Analyze implementation choices;</li>
+<li>Apply abstraction, encapsulation, and information hiding;</li>
+<li>Explain technical decisions; and</li>
+<li>Communicate the completed project professionally.</li>
+</ul>
+
+<h1 class="section">XIII. Final Project Requirements</h1>
+<ul>
+<li><strong>Functional Features:</strong> Core features must be operational.</li>
+<li><strong>Data Structure Implementation:</strong> Selected structures must be meaningfully applied.</li>
+<li><strong>Algorithm Implementation:</strong> Important algorithms must be implemented and explainable.</li>
+<li><strong>Searching and/or Sorting:</strong> Where appropriate, the system should demonstrate suitable techniques.</li>
+<li><strong>Testing:</strong> The group must demonstrate test cases and testing results.</li>
+<li><strong>Debugging:</strong> The group must identify and resolve significant errors encountered during development.</li>
+<li><strong>Efficiency Analysis:</strong> The group should explain efficiency and suitability of major algorithms and data structures.</li>
+<li><strong>Code Quality:</strong> The program should demonstrate organized code, appropriate naming, readability, modularity, encapsulation, appropriate comments, and maintainability.</li>
+</ul>
+
+<h1 class="section">XIV. Final Project Documentation Format</h1>
+<h2>Preliminary Pages</h2>
+<ol>
+<li>Title Page</li>
+<li>Approval/Defense Page</li>
+<li>Table of Contents</li>
+<li>List of Figures</li>
+<li>List of Tables</li>
+</ol>
+
+<h2>Chapter 1 – Introduction</h2>
+<p>1.1 Background of the Project<br>
+1.2 Problem Statement<br>
+1.3 Project Objectives<br>
+1.4 Scope and Limitations<br>
+1.5 Significance of the Project</p>
+
+<h2>Chapter 2 – Review and Technical Foundation</h2>
+<p>2.1 Existing System / Current Process<br>
+2.2 Related Systems or Solutions<br>
+2.3 Related Technologies<br>
+2.4 Data Structures Used<br>
+2.5 Algorithms Used<br>
+2.6 Technical Justification</p>
+
+<h2>Chapter 3 – System Analysis and Design</h2>
+<p>3.1 System Overview<br>
+3.2 System Architecture<br>
+3.3 System Flowchart<br>
+3.4 Process Design<br>
+3.5 Data Structure Design<br>
+3.6 Algorithm Design<br>
+3.7 Pseudocode<br>
+3.8 Database/File/Data Organization, if applicable<br>
+3.9 Interface Design</p>
+
+<h2>Chapter 4 – Implementation, Testing, and Analysis</h2>
+<ul>
+<li>4.1 System Implementation</li>
+<li>4.2 Data Structure Implementation</li>
+<li>4.3 Algorithm Implementation</li>
+<li>4.4 Searching and Sorting Implementation</li>
+<li>4.5 Testing</li>
+<li>4.6 Debugging</li>
+<li>4.7 Complexity Analysis</li>
+<li>4.8 Alternative Implementation Analysis</li>
+</ul>
+
+<table>
+<tr><th>Test Case</th><th>Input</th><th>Expected Output</th><th>Actual Output</th><th>Result</th></tr>
+<tr><td>TC-01</td><td>Sample input</td><td>Expected result</td><td>Actual result</td><td>Pass</td></tr>
+<tr><td>TC-02</td><td>Sample input</td><td>Expected result</td><td>Actual result</td><td>Pass</td></tr>
+</table>
+
+<h2>Chapter 5 – Results, Conclusion, and Recommendations</h2>
+<p>5.1 Project Results<br>
+5.2 Evaluation of Objectives<br>
+5.3 Conclusion<br>
+5.4 Recommendations</p>
+
+<h2>References</h2>
+<p>Use appropriate academic, technical, and credible references related to data structures, algorithms, Java programming, software/system development, algorithm analysis, and related technologies.</p>
+
+<h2>Appendices</h2>
+<ul>
+<li>Selected source code</li>
+<li>Complete source code repository/link</li>
+<li>Test cases</li>
+<li>Test results</li>
+<li>Screenshots</li>
+<li>User guide</li>
+<li>Installation guide</li>
+<li>Sample data</li>
+<li>Team contribution documentation</li>
+<li>Other supporting materials</li>
+</ul>
+
+<h1 class="section">XV. Final Defense Presentation</h1>
+<p><strong>Suggested System Demonstration and Presentation:</strong> 15–20 minutes<br>
+<strong>Panel Question and Answer:</strong> 10–15 minutes</p>
+
+<h2>Required Final Defense Content</h2>
+<ol>
+<li>Project Title</li>
+<li>Problem Background</li>
+<li>Problem Statement</li>
+<li>Objectives</li>
+<li>Proposed and Implemented Solution</li>
+<li>Scope and Limitations</li>
+<li>System Architecture</li>
+<li>Major System Features</li>
+<li>Data Structures Used</li>
+<li>Algorithms Used</li>
+<li>Searching/Sorting Techniques</li>
+<li>Algorithm/Data Structure Justification</li>
+<li>Complexity Analysis</li>
+<li>System Demonstration</li>
+<li>Testing Results</li>
+<li>Debugging / Problems Encountered</li>
+<li>Alternative Implementation Analysis</li>
+<li>Project Results</li>
+<li>Limitations</li>
+<li>Future Recommendations</li>
+<li>Conclusion</li>
+</ol>
+
+<h1 class="section">XVI. System Demonstration</h1>
+<ol>
+<li><strong>System Start-Up</strong> – Show how the application is launched.</li>
+<li><strong>Main Features</strong> – Demonstrate major functions.</li>
+<li><strong>Data Processing</strong> – Show how data is stored, retrieved, modified, searched, sorted, or processed.</li>
+<li><strong>Data Structures</strong> – Explain where selected data structures are used.</li>
+<li><strong>Algorithms</strong> – Demonstrate important algorithms.</li>
+<li><strong>Error Handling</strong> – Demonstrate handling of invalid or unexpected input where applicable.</li>
+<li><strong>Results</strong> – Show actual output produced by the system.</li>
+</ol>
+
+<h1 class="section">XVII. Final Defense Panel Evaluation</h1>
+<table>
+<tr><th>Criteria</th><th>Suggested Weight</th></tr>
+<tr><td>Problem and Solution</td><td>10%</td></tr>
+<tr><td>System Functionality</td><td>20%</td></tr>
+<tr><td>Data Structure Application</td><td>15%</td></tr>
+<tr><td>Algorithm Application</td><td>15%</td></tr>
+<tr><td>Algorithm/Data Structure Analysis</td><td>10%</td></tr>
+<tr><td>Testing and Debugging</td><td>10%</td></tr>
+<tr><td>Code Quality / Implementation</td><td>5%</td></tr>
+<tr><td>Documentation</td><td>5%</td></tr>
+<tr><td>Presentation and Demonstration</td><td>5%</td></tr>
+<tr><td>Response to Panel Questions</td><td>5%</td></tr>
+<tr><th>Total</th><th>100%</th></tr>
+</table>
+
+<h1 class="section">XVIII. Final Defense Panel Fee</h1>
+<div class="fee">FINAL DEFENSE PANEL FEE: ₱1,000 PER GROUP</div>
+<p>This is separate from the Proposal Defense panel fee.</p>
+<table>
+<tr><th>Defense</th><th>Panel Fee per Group</th></tr>
+<tr><td>Proposal Defense</td><td>₱1,000</td></tr>
+<tr><td>Final Defense</td><td>₱1,000</td></tr>
+<tr><th>Total</th><th>₱2,000 per Group</th></tr>
+</table>
+<p>Payment procedures shall follow the policies and instructions of the College/Institution.</p>
+
+<h1 class="section">XIX. Final Project Submission Requirements</h1>
+<ol>
+<li><strong>Final Manuscript</strong> – One complete and properly formatted final project document.</li>
+<li><strong>Java Source Code</strong> – Complete and working source code.</li>
+<li><strong>Executable/Deployable Version</strong> – A working version of the application, when applicable.</li>
+<li><strong>Project Repository</strong> – Approved repository/storage containing source code and required files.</li>
+<li><strong>Test Documentation</strong> – Complete test cases and testing results.</li>
+<li><strong>Technical Documentation</strong> – System architecture, algorithms, data structures, flowcharts, and required diagrams.</li>
+<li><strong>User Guide</strong> – Basic operating instructions.</li>
+<li><strong>Presentation File</strong> – Final PowerPoint or equivalent presentation file.</li>
+<li><strong>Team Contribution Report</strong> – Actual contribution of each member.</li>
+<li><strong>Other Required Forms</strong> – Additional forms required by the instructor, panel, department, or college.</li>
+</ol>
+
+<h1 class="section">XX. Submission Checklist</h1>
+<table class="checklist">
+<tr><th>Requirement</th><th>Done</th></tr>
+<tr><td>Proposal revisions completed</td><td class="checkbox">☐</td></tr>
+<tr><td>Final system is functional</td><td class="checkbox">☐</td></tr>
+<tr><td>Java source code complete</td><td class="checkbox">☐</td></tr>
+<tr><td>Data structures properly implemented</td><td class="checkbox">☐</td></tr>
+<tr><td>Algorithms properly implemented</td><td class="checkbox">☐</td></tr>
+<tr><td>Searching/sorting implemented where applicable</td><td class="checkbox">☐</td></tr>
+<tr><td>System testing completed</td><td class="checkbox">☐</td></tr>
+<tr><td>Errors/debugging completed</td><td class="checkbox">☐</td></tr>
+<tr><td>Complexity analysis completed</td><td class="checkbox">☐</td></tr>
+<tr><td>Alternative implementation analysis completed where applicable</td><td class="checkbox">☐</td></tr>
+<tr><td>Final manuscript completed</td><td class="checkbox">☐</td></tr>
+<tr><td>References completed</td><td class="checkbox">☐</td></tr>
+<tr><td>Appendices completed</td><td class="checkbox">☐</td></tr>
+<tr><td>Screenshots included</td><td class="checkbox">☐</td></tr>
+<tr><td>User guide completed</td><td class="checkbox">☐</td></tr>
+<tr><td>Source code submitted</td><td class="checkbox">☐</td></tr>
+<tr><td>Project files submitted</td><td class="checkbox">☐</td></tr>
+<tr><td>Presentation submitted</td><td class="checkbox">☐</td></tr>
+<tr><td>Team contribution report submitted</td><td class="checkbox">☐</td></tr>
+<tr><td>Proposal revisions incorporated</td><td class="checkbox">☐</td></tr>
+<tr><td>Final Defense completed</td><td class="checkbox">☐</td></tr>
+</table>
+
+<h1 class="section">XXI. Project Defense Rules</h1>
+<ol>
+<li>All group members must be present during the scheduled defense unless an approved excuse is granted.</li>
+<li>All members must participate in the presentation and demonstration.</li>
+<li>Panel members may direct questions to any individual member.</li>
+<li>Each member must understand the complete project, not only their assigned component.</li>
+<li>The group must use professional and respectful language when addressing the panel.</li>
+<li>Students must answer questions honestly and clearly.</li>
+<li>Students must acknowledge the use of external libraries, references, code, or resources.</li>
+<li>Plagiarism, unauthorized copying, fabricated results, or misrepresentation of work is prohibited.</li>
+<li>Any borrowed code or external implementation must be properly acknowledged.</li>
+<li>The group must follow the approved project scope.</li>
+<li>Major project changes must receive instructor approval.</li>
+<li>The panel may require revisions before the project is considered complete.</li>
+<li>Failure to submit required revisions may affect the final project grade.</li>
+<li>Official college policies on academic honesty and student conduct shall apply.</li>
+</ol>
+
+<h1 class="section">XXII. Project Approval and Revision Process</h1>
+<div class="workflow">
+Problem Identification<br>↓<br>
+Project Selection<br>↓<br>
+Proposal Preparation<br>↓<br>
+Proposal Submission<br>↓<br>
+<strong>Proposal Defense</strong><br>↓<br>
+Panel Comments and Revisions<br>↓<br>
+Proposal Approval<br>↓<br>
+System Development<br>↓<br>
+Testing and Debugging<br>↓<br>
+Final Documentation<br>↓<br>
+<strong>Final Defense</strong><br>↓<br>
+Panel Evaluation<br>↓<br>
+Required Revisions<br>↓<br>
+Final Submission<br>↓<br>
+Project Completion
+</div>
+
+<h1 class="section">XXIII. Important Reminders to Students</h1>
+<p>The project is not simply a software-development activity. It is a <strong>Data Structures and Algorithms project</strong>.</p>
+<div class="callout">
+<p>The group must be able to answer:</p>
+<ul>
+<li><strong>What problem are you solving?</strong></li>
+<li><strong>Why is your proposed solution appropriate?</strong></li>
+<li><strong>What data structures are you using?</strong></li>
+<li><strong>Why did you choose those data structures?</strong></li>
+<li><strong>What algorithms are you using?</strong></li>
+<li><strong>Why are those algorithms appropriate?</strong></li>
+<li><strong>What is the efficiency of your solution?</strong></li>
+<li><strong>How did you test and debug the system?</strong></li>
+<li><strong>What alternative approaches could have been used?</strong></li>
+<li><strong>What are the strengths, weaknesses, and trade-offs of your implementation?</strong></li>
+</ul>
+</div>
+<p>The quality of the project will therefore be assessed not only by whether the program works, but also by the students' ability to <strong>analyze, design, implement, test, evaluate, document, and defend</strong> their computing solution.</p>
+
+<h1 class="section">XXIV. Alignment with CC 104 Course Outcomes</h1>
+<table>
+<tr><th>Course Outcome</th><th>Project Evidence</th></tr>
+<tr><td>Explain and apply ADTs, data structures, abstraction, encapsulation, and information hiding</td><td>Data structure design, Java implementation, defense</td></tr>
+<tr><td>Analyze problem specifications and design appropriate algorithms/data structures</td><td>Problem analysis, algorithm design, proposal</td></tr>
+<tr><td>Analyze alternative implementations</td><td>Complexity and alternative implementation analysis</td></tr>
+<tr><td>Design, implement, test, and debug programs</td><td>Functional Java application, testing and debugging</td></tr>
+<tr><td>Develop and present a real-world computing project</td><td>Proposal Defense and Final Defense</td></tr>
+<tr><td>Justify design decisions and trade-offs</td><td>Technical defense and panel questioning</td></tr>
+</table>
+
+<h1 class="section">XXV. Final Statement</h1>
+<p>The CC 104 Major Project is intended to provide students with an opportunity to demonstrate practical mastery of <strong>Data Structures and Algorithms in JAVA</strong> through a real-world computing problem.</p>
+<p>Students are expected to demonstrate not only programming ability, but also <strong>problem analysis, algorithmic thinking, appropriate data structure selection, software implementation, testing, technical communication, teamwork, and professional presentation</strong>.</p>
+<p>The Proposal Defense establishes the technical direction of the project, while the Final Defense demonstrates the completed solution and the students' ability to justify their technical decisions.</p>
+<p>All groups are expected to work professionally, observe academic integrity, meet submission deadlines, and respond constructively to panel feedback and required revisions.</p>
+
+<div class="footer">
+    CC 104 – Data Structures and Algorithms in JAVA <br> Mabini Colleges, Inc. 
+    <br> Ian Godwin G. Agapito
+</div>
+
+
+
+</div>
+</body>
+</html>
